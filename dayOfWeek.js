@@ -7,11 +7,28 @@ class dayOfWeek {
                          //             for Sunday - Saturday
     }
 
-    calcDay() {
+    calcDay() { 
         // calc days since (1,1,1) aka Jan 1, 1AD
         // mod 7 
 
-        this._dow = 6; // Saturday
+	var dayspassed = 0;
+
+	// calc years passed
+	dayspassed += 365 * ( this.year - 1 );
+
+/*
+	// calc months passed
+	const daymonths = [31,28,31,30,31,30,31,31,30,31,30,31];
+	var monthdays = 0
+	for (var i = 0; i < this.month-1; i++) {
+		monthdays+=daymonths[i];
+	};
+*/
+
+	// calc days passed
+	dayspassed += this.day - 1;;
+
+	this._dow = (6 + dayspassed) % 7;
     }
     
     dayName () {
