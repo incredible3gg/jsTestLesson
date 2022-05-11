@@ -12,4 +12,7 @@ test('Jan 2, 1AD is Sunday', () => {
     expect(date.dayName()).toBe('Sunday');
 });
 
-
+test('Feb 9, 1AD is Wednesday', () => {
+	const date = new dOW(1,2,9);
+	expect(date.dayName()).toBe('Wednesday');
+});
