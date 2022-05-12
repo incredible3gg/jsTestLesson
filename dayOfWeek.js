@@ -36,7 +36,7 @@ class dayOfWeek {
             'Monday',
             'Tuesday',
             'Wednesday',
-            'Thorsday',
+            'Thursday',
             'Friday',
             'Saturday'
         ];
