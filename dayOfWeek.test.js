@@ -39,6 +39,7 @@ testday(3,5,15,"May 15 of 3AD is a Tuesday","Tuesday")
 testday(4,2,8,"Feb 8 of 4AD is a Friday","Friday")
 testday(4,3,21,'March 21 is a Friday','Friday')
 testday(4,12,31,"December 31 of Ford is a Wednesday","Wednesday")
+testday(5,1,1,'Jan 1 of 5AD is a Thursday','Thursday')
 
 /*
       ()
