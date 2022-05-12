@@ -21,6 +21,9 @@ class dayOfWeek {
 	var monthdays = 0
 	for (var i = 0; i < this.month-1; i++) {
 		monthdays+=daymonths[i];
+		if (Math.floor(this.year/4)>=1 && i == 1) {
+			monthdays+=1
+		}
 	};
 	dayspassed +=monthdays
 
