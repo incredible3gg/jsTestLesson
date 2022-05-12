@@ -15,13 +15,18 @@ class dayOfWeek {
 
 	// calc years passed
 	dayspassed += 365 * ( this.year - 1 );
+    if (this.year%4==0) {
+        dayspassed += (this.year/4)-1
+    } else {
+        dayspassed += Math.floor(this.year/4)
+    }
 
 	// calc months passed
 	const daymonths = [31,28,31,30,31,30,31,31,30,31,30,31];
 	var monthdays = 0
 	for (var i = 0; i < this.month-1; i++) {
 		monthdays+=daymonths[i];
-		if (Math.floor(this.year/4)>=1 && i == 1) {
+		if (this.year%4==0 && i == 1) {
 			monthdays+=1
 		}
 	};
